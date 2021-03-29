@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
   <title>Tesina</title>
-  <link rel="shortcut icon" type="image/jpg" href="../images/favicon.png"/>
+  <link rel="shortcut icon" type="image/png" href="../images/favicon.png"/>
   <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 
   <!-- CSS  -->
@@ -12,27 +12,60 @@
   <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
-<body class="black">
+<body id="sopra" class="scrollspy">
   <!--navbar start-->
-  <nav class="nav-extended, teal">
+  <div class="navbar-fixed">
+  <nav class="nav-extended teal">
     <div class="nav-wrapper">
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <ul id="nav-mobile" class="right">
+        <li><div class="switch"><label><input type="checkbox"><span class="lever white"></span></label></div></li>
         <li><a href="../">IT</a></li>
         <li class="active"><a href="./">EN</a></li>
         <li><a href="../si/">SI</a></li>
       </ul>
+      <ul id="nav-mobile" class="left">
+        <li><a href="#" class="sidenav-trigger show-on-large" data-target="menu-side"><i class="material-icons white-text">menu</i></a></li>
+      </ul>
     </div>
   </nav>
+  </div>
   <!--navbar end-->
-  <!--text start-->
-  <h1 class="header center orange-text">EN</h1>
-  <!--text end-->
+  <!--sidenav start-->
+  <ul class="sidenav teal" id="menu-side">
+    <li>
+      <div class="user-view">
+        <li><a href="#centro" class="white-text">Centro</a></li>
+        <li><a href="#sotto" class="white-text">Sotto</a></li>
+      </div>
+    </li> 
+  </ul>
+  <!--sidenav stop--> 
+  <!--content start-->
+    <img class="responsive-img" src="../images/95.jpg">
+    <h1 id="centro" class="header center orange-text scrollspy">EN</h1>
+  <img class="responsive-img" src="../images/windows_95_by_clutch.jpg">
+  <!--content end-->
+  <!--to top button start-->
+  <div class="fixed-action-btn">
+    <a href="#sopra" class="btn-floating btn-large waves-effect waves-light teal">
+      <i class="material-icons">expand_less</i>
+    </a>
+  </div>
+  <!--to top button stop-->
+  <script type="text/javascript" src="../js/materialize.min.js"></script>
  </body>
  <!--bootom bar start-->
- <div class="footer-copyright teal">
-  <div class="container black-text">
-  © 2021 Copyright Samux6146
-  </div>
-</footer>     
+  <div id="sotto" class="footer-copyright teal scrollspy">
+    <div class="container black-text">
+    © 2021 Copyright Samux6146
+    </div>
+ </footer>     
 <!--bottom bar end-->
 </html>
+
+<script>
+  var elems = document.querySelectorAll('.sidenav');
+  var instances = M.Sidenav.init(elems);
+  var elems = document.querySelectorAll('.scrollspy');
+    var instances = M.ScrollSpy.init(elems);
+</script>
