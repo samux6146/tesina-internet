@@ -51,105 +51,104 @@
       <i class="material-icons white-text" id="tastosu">expand_less</i>
     </a>
   </div>
-  <!--to top button stop-->
-  <script type="text/javascript" src="js/materialize.min.js"></script>
- </body>
- <!--bootom bar start-->
+  <!--bottom bar start-->
   <div id="sotto" class="footer-copyright teal scrollspy">
     <div class="container  white-text">
     © 2021 Copyright Samux6146
     </div>
   </div>
-<!--bottom bar end-->
+  <!--bottom bar end-->
+  <!--to top button stop-->
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script>
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems);
+    var elems = document.querySelectorAll('.scrollspy');
+    var instances = M.ScrollSpy.init(elems);
+    /*theme switch start*/
+    console.log("started")
+    function is_switched(){  
+      var toggleSwitch = localStorage.getItem('dark')
+      console.log(toggleSwitch,"1")
+      if(localStorage.getItem('dark')==="true"){
+        document.getElementById('mode').setAttribute("checked","checked");
+        console.log("switched")
+      }
+      console.log(toggleSwitch,"2")
+      var toggleSwitch = document.getElementById('mode').checked;
+      console.log(toggleSwitch,"3")
+      if(toggleSwitch==true){
+        var toggleSwitch = true
+        /*load theme*/
+        document.getElementById('mode').setAttribute("checked","checked");
+        /*background*/
+        document.getElementById('bodyid').removeAttribute("class","scrollspy white");
+        document.getElementById('bodyid').setAttribute("class", "scrollspy black");
+        /*tasto up*/
+        document.getElementById('tastosu').removeAttribute("class","material-icons white-text");
+        document.getElementById('tastosu').setAttribute("class", "material-icons black-text");
+        /*switch*/
+        document.getElementById('switch_color').removeAttribute("class","lever white");
+        document.getElementById('switch_color').setAttribute("class", "lever black");
+        /*sidenav button*/
+        document.getElementById('sidenav_button').removeAttribute("class","material-icons white-text");
+        document.getElementById('sidenav_button').setAttribute("class", "material-icons black-text");
+        /*langueges*/
+        document.getElementById('langit').removeAttribute("class","white-text");
+        document.getElementById('langen').removeAttribute("class","white-text");
+        document.getElementById('langsi').removeAttribute("class","white-text");
+        document.getElementById('langit').setAttribute("class", "black-text");
+        document.getElementById('langen').setAttribute("class", "black-text");
+        document.getElementById('langsi').setAttribute("class", "black-text");
+        /*sidenav*/
+        document.getElementById('side0').removeAttribute("class","white-text");
+        document.getElementById('side1').removeAttribute("class","white-text");
+        document.getElementById('side0').setAttribute("class", "black-text");
+        document.getElementById('side1').setAttribute("class", "black-text");
+        /*save theme*/
+        localStorage.setItem('dark', 'true');
+      }
+      else{
+        var toggleSwitch = false
+         /*load theme*/
+         document.getElementById('mode').removeAttribute("checked","checked");
+        /*background*/
+        document.getElementById('bodyid').removeAttribute("class", "scrollspy black");
+        document.getElementById('bodyid').setAttribute("class", "scrollspy white");
+        /*tasto up*/
+        document.getElementById('tastosu').removeAttribute("class","material-icons black-text");
+        document.getElementById('tastosu').setAttribute("class", "material-icons white-text");
+        /*switch*/
+        document.getElementById('switch_color').removeAttribute("class","lever black");
+        document.getElementById('switch_color').setAttribute("class", "lever white");
+        /*sidenav button*/
+        document.getElementById('sidenav_button').removeAttribute("class","material-icons black-text");
+        document.getElementById('sidenav_button').setAttribute("class", "material-icons white-text");
+        /*langueges*/
+        document.getElementById('langit').removeAttribute("class","black-text");
+        document.getElementById('langen').removeAttribute("class","black-text");
+        document.getElementById('langsi').removeAttribute("class","black-text");
+        document.getElementById('langit').setAttribute("class", "white-text");
+        document.getElementById('langen').setAttribute("class", "white-text");
+        document.getElementById('langsi').setAttribute("class", "white-text");
+        /*sidenav*/
+        document.getElementById('side0').removeAttribute("class","black-text");
+        document.getElementById('side1').removeAttribute("class","black-text");
+        document.getElementById('side0').setAttribute("class", "white-text");
+        document.getElementById('side1').setAttribute("class", "white-text");
+        /*save theme*/
+        localStorage.setItem('dark', 'false');
+      }
+    }
+    /*theme switch stop*/
+  </script>
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BLNMH453H8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BLNMH453H8');
+  </script>
+ </body>
 </html>
-<script>
-  var elems = document.querySelectorAll('.sidenav');
-  var instances = M.Sidenav.init(elems);
-  var elems = document.querySelectorAll('.scrollspy');
-  var instances = M.ScrollSpy.init(elems);
-  /*theme switch start*/
-  console.log("started")
-  function is_switched(){  
-    var toggleSwitch = localStorage.getItem('dark')
-    console.log(toggleSwitch,"1")
-    if(localStorage.getItem('dark')==="true"){
-      document.getElementById('mode').setAttribute("checked","checked");
-      console.log("switched")
-    }
-    console.log(toggleSwitch,"2")
-    var toggleSwitch = document.getElementById('mode').checked;
-    console.log(toggleSwitch,"3")
-    if(toggleSwitch==true){
-      var toggleSwitch = true
-      /*load theme*/
-      document.getElementById('mode').setAttribute("checked","checked");
-      /*background*/
-      document.getElementById('bodyid').removeAttribute("class","scrollspy white");
-      document.getElementById('bodyid').setAttribute("class", "scrollspy black");
-      /*tasto up*/
-      document.getElementById('tastosu').removeAttribute("class","material-icons white-text");
-      document.getElementById('tastosu').setAttribute("class", "material-icons black-text");
-      /*switch*/
-      document.getElementById('switch_color').removeAttribute("class","lever white");
-      document.getElementById('switch_color').setAttribute("class", "lever black");
-      /*sidenav button*/
-      document.getElementById('sidenav_button').removeAttribute("class","material-icons white-text");
-      document.getElementById('sidenav_button').setAttribute("class", "material-icons black-text");
-      /*langueges*/
-      document.getElementById('langit').removeAttribute("class","white-text");
-      document.getElementById('langen').removeAttribute("class","white-text");
-      document.getElementById('langsi').removeAttribute("class","white-text");
-      document.getElementById('langit').setAttribute("class", "black-text");
-      document.getElementById('langen').setAttribute("class", "black-text");
-      document.getElementById('langsi').setAttribute("class", "black-text");
-      /*sidenav*/
-      document.getElementById('side0').removeAttribute("class","white-text");
-      document.getElementById('side1').removeAttribute("class","white-text");
-      document.getElementById('side0').setAttribute("class", "black-text");
-      document.getElementById('side1').setAttribute("class", "black-text");
-      /*save theme*/
-      localStorage.setItem('dark', 'true');
-    }
-    else{
-      var toggleSwitch = false
-       /*load theme*/
-       document.getElementById('mode').removeAttribute("checked","checked");
-      /*background*/
-      document.getElementById('bodyid').removeAttribute("class", "scrollspy black");
-      document.getElementById('bodyid').setAttribute("class", "scrollspy white");
-      /*tasto up*/
-      document.getElementById('tastosu').removeAttribute("class","material-icons black-text");
-      document.getElementById('tastosu').setAttribute("class", "material-icons white-text");
-      /*switch*/
-      document.getElementById('switch_color').removeAttribute("class","lever black");
-      document.getElementById('switch_color').setAttribute("class", "lever white");
-      /*sidenav button*/
-      document.getElementById('sidenav_button').removeAttribute("class","material-icons black-text");
-      document.getElementById('sidenav_button').setAttribute("class", "material-icons white-text");
-      /*langueges*/
-      document.getElementById('langit').removeAttribute("class","black-text");
-      document.getElementById('langen').removeAttribute("class","black-text");
-      document.getElementById('langsi').removeAttribute("class","black-text");
-      document.getElementById('langit').setAttribute("class", "white-text");
-      document.getElementById('langen').setAttribute("class", "white-text");
-      document.getElementById('langsi').setAttribute("class", "white-text");
-      /*sidenav*/
-      document.getElementById('side0').removeAttribute("class","black-text");
-      document.getElementById('side1').removeAttribute("class","black-text");
-      document.getElementById('side0').setAttribute("class", "white-text");
-      document.getElementById('side1').setAttribute("class", "white-text");
-      /*save theme*/
-      localStorage.setItem('dark', 'false');
-    }
-  }
-  /*theme switch stop*/
-</script>
-<!-- Global Site Tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BLNMH453H8"></script>
-
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-BLNMH453H8');
-</script>
