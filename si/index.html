@@ -36,6 +36,7 @@
       <div class="user-view">
         <li><a href="#uvod" id="side0" class="white-text">1 Uvod</a></li>
         <li><a href="#1_pog" id="side1" class="white-text">2 Pred Internetom</a></li>
+        <li><a href="#2_pog" id="side2" class="white-text">3 Dial-up</a></li>
       </div>
     </li> 
   </ul>
@@ -52,8 +53,9 @@
       ter kupiti nov telefon brez izhajati iz doma. Amkpak kaje je Internet? Internet ja angleška beseda sestavljena iz: INTERN(ational) in NET(work).
       Zato beseda Internet pomeni internationalna mreža.
     </p>
-    <br>
     <!--Uvod end-->
+    <br>
+    <br>
     <br>
     <br>
     <br>
@@ -63,12 +65,33 @@
     <!--PRED INTERNETOM start-->
     <h1 id="1_pog" class="header center teal-text scrollspy">PRED INTERNETOM</h1>
     <p class="flow-text teal-text center">
-      Internet. Ga vporabljamo vsak dan za gledati en film, Iskati kako se kuha pašta 
-      ter kupiti nov telefon brez izhajati iz doma. Amkpak kaje je Internet? Internet ja angleška beseda sestavljena iz: INTERN(ational) in NET(work).
-      Zato beseda Internet pomeni internationalna mreža.
+      Pred internetom je vse bilo drugače. Nekaj je bilo lažje drugo pa težje.
+      Za podatke smo morali iti v eni knižnici. Zdaj pa lahko iščemo na googlom in najdemo tisto ki iščemo
+      v nekih sekundih. Za pogledat en film smo ga morali fizično ga imet doma zdaj pa lahko rabimo
+      eno spletno stran kot netflix.com, disneyplus.com, hulu.com, itd ki za nekaj evrov na mesec nam pustijo
+      dostop za milijone in milijone filmov. Isto za glazbo enkrat smo mogli imet cd ali vinilno ploščo
+      zdaj pa lahko rabimo spotify, apple music, itd.
     </p>
-    <br>
     <!--PRED INTERNETOM end-->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--Dial-up start-->
+    <h1 id="2_pog" class="header center teal-text scrollspy">DIAL-UP</h1>
+    <p class="flow-text teal-text center">
+      Pred internetom je vse bilo drugače. Nekaj je bilo lažje drugo pa težje.
+      Za podatke smo morali iti v eni knižnici. Zdaj pa lahko iščemo na googlom in najdemo tisto ki iščemo
+      v nekih sekundih. Za pogledat en film smo ga morali fizično ga imet doma zdaj pa lahko rabimo
+      eno spletno stran kot netflix.com, disneyplus.com, hulu.com, itd ki za nekaj evrov na mesec nam pustijo
+      dostop za milijone in milijone filmov. Isto za glazbo enkrat smo mogli imet cd ali vinilno ploščo
+      zdaj pa lahko rabimo spotify, apple music, itd.
+    </p>
+    <!--Dial-up end-->
   <img class="responsive-img" id="img2" src="../images/windows_95_by_clutch.jpg">
   <!--content end-->
   <!--to top button start-->
@@ -132,8 +155,10 @@
       /*sidenav*/
       document.getElementById('side0').removeAttribute("class","white-text");
       document.getElementById('side1').removeAttribute("class","white-text");
+      document.getElementById('side2').removeAttribute("class","white-text");
       document.getElementById('side0').setAttribute("class", "black-text");
       document.getElementById('side1').setAttribute("class", "black-text");
+      document.getElementById('side2').setAttribute("class", "black-text");
       /*save theme*/
       localStorage.setItem('dark', 'true');
     }
@@ -163,8 +188,10 @@
       /*sidenav*/
       document.getElementById('side0').removeAttribute("class","black-text");
       document.getElementById('side1').removeAttribute("class","black-text");
+      document.getElementById('side2').removeAttribute("class","black-text");
       document.getElementById('side0').setAttribute("class", "white-text");
       document.getElementById('side1').setAttribute("class", "white-text");
+      document.getElementById('side2').setAttribute("class", "white-text");
       /*save theme*/
       localStorage.setItem('dark', 'false');
     }
