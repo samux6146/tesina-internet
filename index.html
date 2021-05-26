@@ -37,6 +37,7 @@
         <li><a href="#3_pog" id="side3" class="white-text">4 Spletne povezave</a></li>
         <li><a href="#4_pog" id="side4" class="white-text">5 Spletna povezava na telefonu</a></li>
         <li><a href="#5_pog" id="side5" class="white-text">6 Podatkovno središče</a></li>
+        <li><a href="#6_pog" id="side6" class="white-text">7 spletne strani</a></li>
       </div>
     </li> 
   </ul>
@@ -132,14 +133,16 @@
     <!--Mobile data start-->
     <h1 id="4_pog" class="header center teal-text scrollspy">Spletna povezava na telefonu</h1>
     <p class="flow-text teal-text center">
-      Vsi imamo en prenosni telefon in skoraj vsi na njega imamo spletno povezavo.
-      Ta tehnologija kot vse tehnologije je vedno boljša. Za telefona smo začeli z 2g in
-       zdaj začnemo že z 5g. 2g (GSM) se je začel leta 1991 v finski. Od 2g do 5g je vedno menjala 
-       skoraj samo hitrost s katerem podatki potujejo.
+      Vsi imamo prenosni telefon in skoraj vsi na njemu imamo spletno povezavo.
+      Ta tehnologija se stalno izboljšuje. Prvi telfoni s spletno povezavo vporabljajo Gsm ( Global System for Mobile communications),
+      ki je prvi sistem za digitalen prenos govora in signalizacije ter predstavlja začetek 2 generacje
+      mobilnih telefonskih sistemov (2G). Prvo omrežje GSM je v začetku leta 1991 vzpostavilo podjetj
+      na Finskem. Sedaj tehonologija napreduje in nekatera podjetja so že izdelala telefone, ki delujejo
+      tudi s 5 generacjo mobilnih telefonskih sistemov (5G).
         <br><br>
-      Splet na telefonu dela, tako da telefon vsebuje eno kardico s podatki o kako in pri kaj 
-      se mora telefon povezati. Tako telefon bere podatke in išče bližjo anteno. Antene se vedno 
-      izmenjujejo z najbližjo telefonu.
+      Splet na telefonu dela, tako da telefon vsebuje kartico s podatki o tem kako in na kaj 
+      se mora telefon povezati. Tako telefon bere podatke in išče njabližjo anteno. Antene se stalno 
+      izmenjujejo in telefon vporabi tisto, ki je najbližja.
       
     </p>
     <!--Mobile data end-->
@@ -167,6 +170,39 @@
       </div>
     </div>
     <!--Data centers end-->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--Spletne strani start-->
+    <h1 id="6_pog" class="header center teal-text scrollspy">Spletne strani</h1>
+    <p class="flow-text teal-text center">
+     Spletne starani kot npr. tiste za nakupovanje različnih stvari so običajno
+      zelo preproste za uporabo. Ampak, kaj je vsega v eni 
+      spletni strani? Vse spletne strani, tudi če so grafične jih sestavljamo s tekstom. 
+    </p>
+    <!--code snippet start-->
+    <div class="container teal">
+      <p class="flow-text code">
+        &lt;div class="col s12 m8 offset-m2 l6 offset-l3"<br>
+    &lt;div class="card-panel grey lighten-5 z-depth-1"><br>
+      &lt;div class="row valign-wrapper"><br>
+        &lt;div class="col s10"><br>
+          &lt;span class="black-text"><br>
+            Hello! <br>
+          &lt;/span> <br>
+        &lt;/div> <br>
+      &lt;/div> <br>
+    &lt;/div> <br>
+  &lt;/div> <br>
+       </p>
+      </div>
+    <!--code snippet end-->
+    <!--Spletne strani end-->
     <br>
     <br>
     <br>
@@ -234,12 +270,14 @@
       document.getElementById('side3').removeAttribute("class","white-text");
       document.getElementById('side4').removeAttribute("class","white-text");
       document.getElementById('side5').removeAttribute("class","white-text");
+      document.getElementById('side6').removeAttribute("class","white-text");
       document.getElementById('side0').setAttribute("class", "black-text");
       document.getElementById('side1').setAttribute("class", "black-text");
       document.getElementById('side2').setAttribute("class", "black-text");
       document.getElementById('side3').setAttribute("class", "black-text");
       document.getElementById('side4').setAttribute("class", "black-text");
       document.getElementById('side5').setAttribute("class", "black-text");
+      document.getElementById('side6').setAttribute("class", "black-text");
       /*save theme*/
       localStorage.setItem('dark', 'true');
     }
@@ -266,12 +304,14 @@
       document.getElementById('side3').removeAttribute("class","black-text");
       document.getElementById('side4').removeAttribute("class","black-text");
       document.getElementById('side5').removeAttribute("class","black-text");
+      document.getElementById('side6').removeAttribute("class","black-text");
       document.getElementById('side0').setAttribute("class", "white-text");
       document.getElementById('side1').setAttribute("class", "white-text");
       document.getElementById('side2').setAttribute("class", "white-text");
       document.getElementById('side3').setAttribute("class", "white-text");
       document.getElementById('side4').setAttribute("class", "white-text");
       document.getElementById('side5').setAttribute("class", "white-text");
+      document.getElementById('side6').setAttribute("class", "white-text");
       /*save theme*/
       localStorage.setItem('dark', 'false');
     }
