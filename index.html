@@ -41,9 +41,8 @@
         <li><a href="#7_pog" id="side7" class="white-text">8 World Wide Web</a></li>
         <li><a href="#8_pog" id="side8" class="white-text">9 Spletni brskalniki</a></li>
         <li><a href="#9_pog" id="side9" class="white-text">10 Globoki splet</a></li>
-        <li><a href="#10_pog" id="side10" class="white-text">11 Email</a></li>
-        <li><a href="#11_pog" id="side11" class="white-text">12 IOT</a></li>
-        <li><a href="#12_pog" id="side12" class="white-text">13 Danes</a></li>
+        <li><a href="#10_pog" id="side10" class="white-text">11 E-pošta</a></li>
+        <li><a href="#11_pog" id="side11" class="white-text">12 Danes</a></li>
       </div>
     </li> 
   </ul>
@@ -258,7 +257,13 @@
    <!--deep web start-->
    <h1 id="9_pog" class="header center teal-text scrollspy">Globoki splet</h1>
    <p class="flow-text teal-text center">
-    Text here!
+    Globoki splet (eng. deep web) je del spleta, ki ga z navadnimi iskalniki, kot Google, ni mogoče najti.
+   </p>
+   <img class="responsive-img" id="img1" src="images/deep-web.png">
+   <p class="flow-text teal-text center">
+    Tudi globoki splet lahko obsega čisto navadne strani, ki jih uporabljamo vsakodnevno,
+     kot so e-pošta, bančništvo, forumi, najdejo se pa tudi manj zakonite storitve 
+     (npr. preprodaja drog, hekerstvo, ipd.). Ta del spleta imenujemo temni splet (angleško dark net).
    </p>
    <!--deep web end-->
   <br>
@@ -270,9 +275,16 @@
   <br>
   <br>
   <!--email engine start-->
-  <h1 id="10_pog" class="header center teal-text scrollspy">Email</h1>
+  <h1 id="10_pog" class="header center teal-text scrollspy">E-pošta</h1>
   <p class="flow-text teal-text center">
-   Text here!
+    Elektronska pošta (ang. E-mail) je način sestavljanja, pošiljanja in sprejemanja sporočil 
+    po elektronskih komunikacijskih sistemih. <br> <br>
+    Elektronska pošta nam omogoča, da si lahko s posamezniki ali skupinami ljudi po vsem svetu izmenjujete sporočila. <br> <br>
+    Sestavljeno je iz: <br>
+    •Naslova prejemnika<br>
+    •Predmeta sporočila (opis vsebine)<br>
+    •Samega besedila sporočila<br>
+    •Morda še priključene datoteke
   </p>
   <!--email engine end-->
  <br>
@@ -283,24 +295,11 @@
  <br>
  <br>
  <br>
- <!--iot start-->
- <h1 id="11_pog" class="header center teal-text scrollspy">IOT</h1>
- <p class="flow-text teal-text center">
-  Text here!
- </p>
- <!--iot end-->
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 <!--danes start-->
-<h1 id="12_pog" class="header center teal-text scrollspy">Danes</h1>
+<h1 id="11_pog" class="header center teal-text scrollspy">Danes</h1>
 <p class="flow-text teal-text center">
- Text here!
+ Danes spleta vporabljamo za vse, brez njega bi ne prežineli. Zadnje leto je bil splet vporabljen več kot ponavadi zaradi
+ videolekcjah, delo na daljvi ali samo za glegati en filem ali poslušati našo najljubnejše glasbo.
 </p>
 <!--danes end-->
 <br>
@@ -376,7 +375,6 @@
       document.getElementById('side9').removeAttribute("class","white-text");
       document.getElementById('side10').removeAttribute("class","white-text");
       document.getElementById('side11').removeAttribute("class","white-text");
-      document.getElementById('side12').removeAttribute("class","white-text");
       document.getElementById('side0').setAttribute("class", "black-text");
       document.getElementById('side1').setAttribute("class", "black-text");
       document.getElementById('side2').setAttribute("class", "black-text");
@@ -389,7 +387,6 @@
       document.getElementById('side9').setAttribute("class", "black-text");
       document.getElementById('side10').setAttribute("class", "black-text");
       document.getElementById('side11').setAttribute("class", "black-text");
-      document.getElementById('side12').setAttribute("class", "black-text");
       /*save theme*/
       localStorage.setItem('dark', 'true');
     }
@@ -422,7 +419,6 @@
       document.getElementById('side9').removeAttribute("class","black-text");
       document.getElementById('side10').removeAttribute("class","black-text");
       document.getElementById('side11').removeAttribute("class","black-text");
-      document.getElementById('side12').removeAttribute("class","black-text");
       document.getElementById('side0').setAttribute("class", "white-text");
       document.getElementById('side1').setAttribute("class", "white-text");
       document.getElementById('side2').setAttribute("class", "white-text");
@@ -435,7 +431,6 @@
       document.getElementById('side9').setAttribute("class", "white-text");
       document.getElementById('side10').setAttribute("class", "white-text");
       document.getElementById('side11').setAttribute("class", "white-text");
-      document.getElementById('side12').setAttribute("class", "white-text");
       /*save theme*/
       localStorage.setItem('dark', 'false');
     }
