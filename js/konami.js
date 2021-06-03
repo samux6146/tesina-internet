@@ -22,5 +22,5 @@ var allowedKeys = {
     }
   });
     function activateCheats() {
-    alert("cheats activated");
+    window.location.href = "./cat/";
   }
