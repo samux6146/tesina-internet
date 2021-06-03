@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>)Internet credits</title>
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body onload="is_switched();" id="bodyid" class="scrollspy white">
+  <!--navbar start-->
+  <div class="navbar-fixed">
+  <nav class="nav-extended teal">
+    <div class="nav-wrapper">
+      <ul id="nav-mobile" class="right">
+        <li><form action="#"></form><div class="switch"><label for="mode"><input id="mode" type="checkbox" onclick="is_switched()"><span id="switch_color" class="lever white"></span></label></div></form></li>
+      </ul>
+      <ul class="left">
+        <li><a href="./"><i id="home_button" class="material-icons">home</i></a></li>    
+      </ul>
+    </div>
+  </nav>
+  </div>
+  <!--navbar end-->
+  <script>
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems);
+    var elems = document.querySelectorAll('.scrollspy');
+    var instances = M.ScrollSpy.init(elems);
+    /*theme switch start*/
+    console.log("started")
+    function is_switched(){  
+      var toggleSwitch = localStorage.getItem('dark')
+      if(localStorage.getItem('dark')==="true"){
+        document.getElementById('mode').setAttribute("checked","checked");
+        console.log("switched")
+      }
+      var toggleSwitch = document.getElementById('mode').checked;
+      if(toggleSwitch==true){
+        var toggleSwitch = true
+        /*load theme*/
+        document.getElementById('mode').setAttribute("checked","checked");
+        /*background*/
+        document.getElementById('bodyid').removeAttribute("class","scrollspy white");
+        document.getElementById('bodyid').setAttribute("class", "scrollspy black");
+        /*switch*/
+        document.getElementById('switch_color').removeAttribute("class","lever white");
+        document.getElementById('switch_color').setAttribute("class", "lever black");
+        /*home button*/
+        document.getElementById('home_button').removeAttribute("class","material-icons white-text");
+        document.getElementById('home_button').setAttribute("class", "material-icons black-text");
+        /*save theme*/
+        localStorage.setItem('dark', 'true');
+      }
+      else{
+        var toggleSwitch = false
+         /*load theme*/
+         document.getElementById('mode').removeAttribute("checked","checked");
+        /*background*/
+        document.getElementById('bodyid').removeAttribute("class", "scrollspy black");
+        document.getElementById('bodyid').setAttribute("class", "scrollspy white");
+        /*switch*/
+        document.getElementById('switch_color').removeAttribute("class","lever black");
+        document.getElementById('switch_color').setAttribute("class", "lever white");
+        /*home button*/
+        document.getElementById('home_button').removeAttribute("class","material-icons black-text");
+        document.getElementById('home_button').setAttribute("class", "material-icons white-text");
+        /*save theme*/
+        localStorage.setItem('dark', 'false');
+      }
+    }
+    /*theme switch stop*/
+  </script>
+</body>

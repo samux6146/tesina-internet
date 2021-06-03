@@ -346,14 +346,11 @@
   console.log("started")
   function is_switched(){  
     var toggleSwitch = localStorage.getItem('dark')
-    console.log(toggleSwitch,"1")
     if(localStorage.getItem('dark')==="true"){
       document.getElementById('mode').setAttribute("checked","checked");
       console.log("switched")
     }
-    console.log(toggleSwitch,"2")
     var toggleSwitch = document.getElementById('mode').checked;
-    console.log(toggleSwitch,"3")
     if(toggleSwitch==true){
       var toggleSwitch = true
       /*load theme*/
