@@ -43,6 +43,7 @@
         <li><a href="#9_pog" id="side9" class="white-text">10 Globoki splet</a></li>
         <li><a href="#10_pog" id="side10" class="white-text">11 E-pošta</a></li>
         <li><a href="#11_pog" id="side11" class="white-text">12 Danes</a></li>
+        <li><a href="#veri" id="side12" class="white-text">Veri</a></li>
       </div>
     </li> 
   </ul>
@@ -221,10 +222,10 @@
      <h1 id="7_pog" class="header center teal-text scrollspy">Svetovni splet</h1>
      <p class="flow-text teal-text center">
       Svetovni splet ali World Wide Web (WWW) je tisto, za kar mi običajno uporabljamo izraz splet.
-      V resnici je WWW organizacja, ki upravlja <span class="red-text">URL</span>e <span class="red-text">(Uniform Resource Locators)</span> 
+      V resnici je WWW organizacja, ki upravlja URLe (Uniform Resource Locators)
        kot npr. https://google.com in jih shrani v isti program.<br><br> 
        WWW je ustvaril 12 marca 1989 Tim Berners-Lee 
-       v <span class="red-text">CERN</span>u <span class="red-text">(European Organization for Nuclear Research)</span>.
+       v CERNu (European Organization for Nuclear Research).
        Prav zato ima organizacja www še danes nekatere serverje v CERNu.
      </p>
      <!--www end-->
@@ -288,7 +289,8 @@
     •Lahko so še priložene datoteke
   </p>
   <div class="container center">
-    <a href="mailto:it.fischer.samuel@gmail.com" class="teal-text orange lighten-1 btn">it.fischer.samuel@gmail.com <span class="iconify" data-icon="dashicons-email-alt" data-inline="false"></span></a>
+    <h1 class="teal-text center">&darr;</h1>
+    <a href="mailto:it.fischer.samuel@gmail.com" class="teal-text red darken-4 lighten-1 btn">it.fischer.samuel@gmail.com <span class="iconify" data-icon="dashicons-email-alt" data-inline="false"></span></a>
   </div>
   <!--email engine end-->
  <br>
@@ -310,6 +312,20 @@
   <iframe src="https://open.spotify.com/embed/track/1aI9cMlIFH2jIiaa1bCbUP" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 </div>
 <!--danes end-->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!--credits start-->
+<div class="container center">
+  <h1 class="teal-text center">&darr;</h1>
+  <a id="veri" href="credits.html" class="teal-text red darken-4 scrollspy btn">Veri</a>
+</div>
+<!--credits end-->
 <br>
 <br>
 <br>
@@ -380,6 +396,7 @@
       document.getElementById('side9').removeAttribute("class","white-text");
       document.getElementById('side10').removeAttribute("class","white-text");
       document.getElementById('side11').removeAttribute("class","white-text");
+      document.getElementById('side12').removeAttribute("class","white-text");
       document.getElementById('side0').setAttribute("class", "black-text");
       document.getElementById('side1').setAttribute("class", "black-text");
       document.getElementById('side2').setAttribute("class", "black-text");
@@ -392,6 +409,7 @@
       document.getElementById('side9').setAttribute("class", "black-text");
       document.getElementById('side10').setAttribute("class", "black-text");
       document.getElementById('side11').setAttribute("class", "black-text");
+      document.getElementById('side12').setAttribute("class", "black-text");
       /*save theme*/
       localStorage.setItem('dark', 'true');
     }
@@ -424,6 +442,7 @@
       document.getElementById('side9').removeAttribute("class","black-text");
       document.getElementById('side10').removeAttribute("class","black-text");
       document.getElementById('side11').removeAttribute("class","black-text");
+      document.getElementById('side11').removeAttribute("class","black-text");
       document.getElementById('side0').setAttribute("class", "white-text");
       document.getElementById('side1').setAttribute("class", "white-text");
       document.getElementById('side2').setAttribute("class", "white-text");
@@ -436,6 +455,7 @@
       document.getElementById('side9').setAttribute("class", "white-text");
       document.getElementById('side10').setAttribute("class", "white-text");
       document.getElementById('side11').setAttribute("class", "white-text");
+      document.getElementById('side12').setAttribute("class", "white-text");
       /*save theme*/
       localStorage.setItem('dark', 'false');
     }
